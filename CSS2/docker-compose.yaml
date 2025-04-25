@@ -4,7 +4,7 @@ networks:
 
 services:
   web:
-    build: ./db/
+    build: ./db/ 
     volumes:
       - ./web:/var/www/html
     ports:
@@ -22,10 +22,11 @@ services:
     image: mysql:9.3
     restart: always
     volumes:
-      - ./db:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d/
     networks:
       - ethicallynetwork
     ports:
       - "3306:33060"
     environment:
       - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=ehc_css

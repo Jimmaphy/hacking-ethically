@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS ehc_css;
+CREATE DATABASE ehc_css;
+
+USE ehc_css;
+
+CREATE TABLE message (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    message TEXT,
+    publishdate DATETIME DEFAULT CURRENT_TIMESTAMP
+);
