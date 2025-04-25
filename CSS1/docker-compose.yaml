@@ -1,0 +1,17 @@
+networks:
+  ethicallynetwork:
+    driver: bridge
+
+services:
+  web:
+    image: php:8.3-apache
+    volumes:
+      - ./web:/var/www/html
+    ports:
+      - "80:80"
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    command: >
+      sh -c "a2enmod rewrite && \
+             sed -i 's|/var/www/html|/var/www/html|g' /etc/apache2/sites-available/000-default.conf && \
+             apachectl -D FOREGROUND"
