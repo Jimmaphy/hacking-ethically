@@ -1,0 +1,31 @@
+networks:
+  ethicallynetwork:
+    driver: bridge
+
+services:
+  web:
+    build: ./db/
+    volumes:
+      - ./web:/var/www/html
+    ports:
+      - "80:80"
+    networks:
+      - ethicallynetwork
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+    command: >
+      sh -c "a2enmod rewrite && \
+             sed -i 's|/var/www/html|/var/www/html|g' /etc/apache2/sites-available/000-default.conf && \
+             apachectl -D FOREGROUND"
+  
+  sql:
+    image: mysql:9.3
+    restart: always
+    volumes:
+      - ./db:/var/lib/mysql
+    networks:
+      - ethicallynetwork
+    ports:
+      - "3306:33060"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
