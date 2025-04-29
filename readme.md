@@ -12,8 +12,9 @@ This can be done according to the [getting started guide](https://docs.docker.co
 Follow the examples under `Try it out` in the before mentioned guide, as well as the [Docker Compose guide](https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-docker-compose/). 
 Then you are good to go.
 
-### Installation
 
+### Installation
+ 
 If you use **Microsoft Windows** as your main operating system, two installation methods are available.
 The first option is to install [Docker Desktop](https://docs.docker.com/desktop/setup/install/windows-install/) directly on Windows.
 This is the easiest method, but comes with a performance penalty.
@@ -40,3 +41,41 @@ If you are like me and prefer to keep to the trusted terminal, you can install [
 Don't forget to run the [post-installation](https://docs.docker.com/engine/install/linux-postinstall/) if you installed Docker Engine.
 
 
+### Downloading
+
+To use the exercizes, they need to be downloaded to your computer.
+This can be done by downloading this repository as a zip file, or by cloning it onto your machine.
+No futher setup is required to run the exercizes.
+
+
+### Running
+
+To run the exercizes, use a terminal host to navigate to the specific exercizes by using `cd`.
+Then, run the exercize by running `docker compose up -d`.
+This line is futher explained during the exercises.
+When you're finished, make sure to stop the current environment before moving on to the next one.
+This can be achieved through `docker compose down`.
+
+```bash
+# Navigate to the correct folder
+cd ./CSS1/
+
+# Start the environment for the exercize
+docker compose up -d
+
+# Stop the environment for the exercize
+docker compose down
+```
+
+### Issues
+
+If at any point, the installation or relevant database becomes corrupted, the original state of the exercize can be restored.
+This is done by removing the containers from your system with `docker compose rm`.
+
+```bash
+# Make sure that the environment is stopped before removing
+docker compose down
+
+# Remove all the containers from the current exercize
+docker compose rm
+```
