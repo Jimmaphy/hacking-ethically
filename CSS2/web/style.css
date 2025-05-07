@@ -70,3 +70,10 @@ article {
 .article-content {
     margin: 0;
 }
+
+.info {
+    padding: .75rem;
+    background-color: greenyellow;
+    border: 2px solid green;
+    display: none;
+}

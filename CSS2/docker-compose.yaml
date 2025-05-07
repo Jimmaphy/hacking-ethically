@@ -4,7 +4,7 @@ networks:
 
 services:
   web:
-    build: ./db/ 
+    build: . 
     volumes:
       - ./web:/var/www/html
     ports:
