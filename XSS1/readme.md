@@ -18,9 +18,9 @@ docker compose up -d
 This will open up a absolutely beautiful website, that allows one to enter a message.
 This message is then displayed back to the user. Nothing bad right?
 **Wrong!**. The application is vulnerable to something known as `Cross Site Scripting`.
-So what is this CSS? And no, it's not a stylesheet :P.
+So what is this XSS?.
 
-CSS is a vulnerability that occurs when text displayed on a page, is no longer treated as text.
+XSS is a vulnerability that occurs when text displayed on a page, is no longer treated as text.
 Instead, the text is treated as code. Let's start with a basic example.
 In the textbox on the site, enter the message `Hello World`. The site functions as expected.
 Now, type `<i>Hello</i> <b>World</b>`. Instead of showing the text as entered, the website processes the HTML.
@@ -30,7 +30,7 @@ It is a big deal, since HTML offers a beautiful thing: `<script></script>`.
 JavaScript, as everyone here should know, is a programming language for the web.
 If you don't know this, go ask for your money back. Just kidding.
 To exploit this, all that is needed is a script-tag, and the browser will happely execute the code inside.
-Try this by entering `<script>window.alert('CSS')</script>` into the message box.
+Try this by entering `<script>window.alert('XSS')</script>` into the message box.
 Annoying right, so what are some things one could do here?
 Perform the following exercizes and confirm your solution with the answer files.
 
