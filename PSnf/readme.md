@@ -29,3 +29,12 @@ If there is no service hosted on the address below, a request can't be processed
 - 145.19.1.145 AA:BB:CC:DD:EE:FF
 - KPN
 - AMS-IXP
+
+## Ports in action
+
+It is possible show the effect of different ports through the HZ website. 
+For example, when using [www.hz.nl](www.hz.nl), the website is loaded.
+HTTPS is automatically selected as preffered protocol.
+However, it is still possible to access the HTTP version of the website.
+This can be done by directly navigating to port 80 through [http://145.19.1.145:80](http://145.19.1.145:80).
+However, there may be different ports available to access.

@@ -36,7 +36,7 @@
 
             <form method="get" action="#">
                 <label for="search">Search</label>
-                <input type="text" placeholder="search" id="search" name="search">
+                <input type="text" placeholder="search" id="search" name="search" value="<?= $_GET["search"]  ?? "" ?>">
                 <input type="submit" value="Search" id="submit" >
             </form>
 
