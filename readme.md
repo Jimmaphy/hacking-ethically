@@ -79,3 +79,16 @@ docker compose down
 # Remove all the containers from the current exercize
 docker compose rm
 ```
+
+### Workshop Things and Rules
+
+During the workshop, special instructions will be provided that are not included in the instruction files.
+These instructions cover basic information on the usage of browser development tools,
+an overview of JavaScript functions and an overview of SQL statements.
+These are but a refresher for those who forgot.
+
+**IMPORTANT RULE:** DO **NOT** LOOK INSIDE ANY FILES PROVIDED TO YOU,
+UNLESS TOLD TO. THESE EXERCIZES ARE SIMULATIONS AND THE FILES _WILL_ GIVE YOU THE ANSWER!
+
+The exercizes marked '2' are there for challenge. If you can't figure it out, don't worry.
+They will be covered together. After which, the solution to the vulnerability will be discussed.
