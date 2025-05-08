@@ -7,7 +7,7 @@ So what is the issue with this?
 Instead of having a piece of code run once, now a piece of code can be ran everytime the site opens.
 
 1. Make an alert box appear like in the previous exercize, observe what happens when you reload the page.
-2. Write `XSS` in the text box and then automatically click the submit button.
+2. Write `XSS` in the text box and then automatically click the submit button. Hide the confirmation box to make it sneaky.
 
 What you have done is something that X, previously Twitter, didn't properly deal with.
 This caused a clever user to create something that was known as the self-retweeting tweet.
