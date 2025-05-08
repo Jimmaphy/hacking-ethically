@@ -1,0 +1,89 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 5rem;
+    background-color: #000000;
+}
+
+.header-image {
+    height: 4rem;
+    margin: 0.5rem;
+}
+
+.header-title {
+    display: inline-block;
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0 0 1rem;
+    vertical-align: top;
+}
+
+main {
+    padding-inline: 0.5rem;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin-block: 1rem;
+
+}
+
+p {
+    font-size: 1rem;
+}
+
+input {
+    height: 2rem;
+}
+
+input[type='text'],
+input[type='password'] {
+    margin-block: 0;
+    padding-block: 0;
+    width: 10rem;
+}
+
+input[type='submit'] {
+    border: 2px solid black;
+    width: 10.5rem;
+    background-color: black;
+    color: white;
+}
+
+input[type='submit']:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+article {
+    margin-block: 1rem;
+}
+
+.article-date {
+    margin: 0;
+    font-weight: bold;
+}
+
+.article-content {
+    margin: 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 1rem 0;
+    padding: 0
+}
+
+label {
+    display: inline-block;
+    width: 6rem;
+}
+
+.error {
+    color: red;
+}
