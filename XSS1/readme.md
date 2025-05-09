@@ -32,7 +32,7 @@ If you don't know this, go ask for your money back. Just kidding.
 To exploit this, all that is needed is a script-tag, and the browser will happely execute the code inside.
 Try this by entering `<script>window.alert('XSS')</script>` into the message box.
 Annoying right, so what are some things one could do here?
-Perform the following exercizes and confirm your solution with the answer files.
+Try your hand on the following exercizes:
 
 1. Try and select the submit button through JavaScript, and change the text.
 2. Select the textbox and change it's value.
